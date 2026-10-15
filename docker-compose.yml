@@ -1,0 +1,7 @@
+services:
+  app:
+    image: ${IMAGE:-manojkudocker/dev}:${TAG:-latest}
+    container_name: react-app
+    ports:
+      - "80:80"
+    restart: always
