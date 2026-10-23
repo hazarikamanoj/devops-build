@@ -65,93 +65,93 @@ A pre-built React e-commerce application ("OnlineShop") packaged with Docker, bu
 All screenshots are in the [`screenshots/`](screenshots/) folder.
 
 ### Version control
-![Git CLI](screenshots/24-git-cli-log.png)
+![Git CLI](screenshots/24-git-cli-log.PNG)
 
 ### Bash scripts
 **build.sh** run locally (`./build.sh manojkudocker/dev test`): builds the image and tags it with the given tag and `latest`
 
-![build.sh](screenshots/25-script-build-sh.png)
+![build.sh](screenshots/25-script-build-sh.PNG)
 
 **deploy.sh** (pulls the image and starts it with Docker Compose)
 
-![deploy.sh](screenshots/26-script-deploy-sh.png)
+![deploy.sh](screenshots/26-script-deploy-sh.PNG)
 
 ### Jenkins
 **Login page**
 
-![Jenkins login](screenshots/01-jenkins-login.png)
+![Jenkins login](screenshots/01-jenkins-login.PNG)
 
 **Credentials** (secrets masked)
 
-![Jenkins credentials](screenshots/02-jenkins-credentials.png)
+![Jenkins credentials](screenshots/02-jenkins-credentials.PNG)
 
 **Configuration settings**
 
-![Branch sources](screenshots/03-jenkins-config-branch-sources.png)
+![Branch sources](screenshots/03-jenkins-config-branch-sources.PNG)
 ![Build configuration and triggers](screenshots/04-jenkins-config-triggers.png)
 
 **Branches and Jenkinsfile steps**
 
-![Dashboard with dev and master](screenshots/05-jenkins-dashboard-branches.png)
+![Dashboard with dev and master](screenshots/05-jenkins-dashboard-branches.PNG)
 ![Jenkinsfile pipeline steps](screenshots/06-jenkins-jenkinsfile-pipeline-steps.png)
 
 **Execute step commands: `dev` build** (checkout, `./build.sh`, `docker push`, `./deploy.sh`, success)
 
-![dev console 1](screenshots/07-jenkins-console-dev-1.png)
-![dev console 2](screenshots/07-jenkins-console-dev-2.png)
-![dev console 3](screenshots/07-jenkins-console-dev-3.png)
-![dev console 4](screenshots/07-jenkins-console-dev-4.png)
-![dev console 5](screenshots/07-jenkins-console-dev-5.png)
+![dev console 1](screenshots/07-jenkins-console-dev-1.PNG)
+![dev console 2](screenshots/07-jenkins-console-dev-2.PNG)
+![dev console 3](screenshots/07-jenkins-console-dev-3.PNG)
+![dev console 4](screenshots/07-jenkins-console-dev-4.PNG)
+![dev console 5](screenshots/07-jenkins-console-dev-5.PNG)
 
 **Execute step commands: `master` build** (pushes to the prod repo)
 
-![master console 1](screenshots/08-jenkins-console-master-1.png)
-![master console 2](screenshots/08-jenkins-console-master-2.png)
-![master console 3](screenshots/08-jenkins-console-master-3.png)
-![master console 4](screenshots/08-jenkins-console-master-4.png)
-![master console 5](screenshots/08-jenkins-console-master-5.png)
+![master console 1](screenshots/08-jenkins-console-master-1.PNG)
+![master console 2](screenshots/08-jenkins-console-master-2.PNG)
+![master console 3](screenshots/08-jenkins-console-master-3.PNG)
+![master console 4](screenshots/08-jenkins-console-master-4.PNG)
+![master console 5](screenshots/08-jenkins-console-master-5.PNG)
 
 ### Automatic build trigger
-![GitHub webhook](screenshots/09-github-webhook-settings.png)
-![Webhook deliveries 1](screenshots/10-github-webhook-deliveries-1.png)
-![Webhook deliveries 2](screenshots/10-github-webhook-deliveries-2.png)
-![Jenkins webhook events 1](screenshots/11-jenkins-webhook-events-1.png)
-![Jenkins webhook events 2](screenshots/11-jenkins-webhook-events-2.png)
+![GitHub webhook](screenshots/09-github-webhook-settings.PNG)
+![Webhook deliveries 1](screenshots/10-github-webhook-deliveries-1.PNG)
+![Webhook deliveries 2](screenshots/10-github-webhook-deliveries-2.PNG)
+![Jenkins webhook events 1](screenshots/11-jenkins-webhook-events-1.PNG)
+![Jenkins webhook events 2](screenshots/11-jenkins-webhook-events-2.PNG)
 
 ### Docker Hub
 **Access token used by Jenkins** (scope: repo read, write, delete; the token value itself is never shown)
 
-![Docker Hub token settings](screenshots/27-dockerhub-token-settings.png)
+![Docker Hub token settings](screenshots/27-dockerhub-token-settings.PNG)
 
 **Repositories and tags**
 
-![Repositories](screenshots/12-dockerhub-repos.png)
+![Repositories](screenshots/12-dockerhub-repos.PNG)
 ![dev tags](screenshots/13-dockerhub-dev-tags.png)
-![prod tags 1](screenshots/14-dockerhub-prod-tags-1.png)
-![prod tags 2](screenshots/14-dockerhub-prod-tags-2.png)
+![prod tags 1](screenshots/14-dockerhub-prod-tags-1.PNG)
+![prod tags 2](screenshots/14-dockerhub-prod-tags-2.PNG)
 
 ### AWS
-![EC2 console](screenshots/15-aws-ec2-console.png)
-![Security group configuration](screenshots/16-aws-security-group.png)
-![Containers on the server](screenshots/18-server-docker-ps.png)
+![EC2 console](screenshots/15-aws-ec2-console.PNG)
+![Security group configuration](screenshots/16-aws-security-group.PNG)
+![Containers on the server](screenshots/18-server-docker-ps.PNG)
 
 ### Deployed site
-![Deployed site](screenshots/17-deployed-site.png)
+![Deployed site](screenshots/17-deployed-site.PNG)
 
 ### Monitoring health check status
 **Notification setup**
 
-![Telegram notification setup](screenshots/19-monitoring-notification-config.png)
+![Telegram notification setup](screenshots/19-monitoring-notification-config.PNG)
 
 **Application stopped (`docker stop react-app`): DOWN alert**
 
-![Dashboard down](screenshots/20-monitoring-down-dashboard.png)
-![Telegram down](screenshots/21-monitoring-down-telegram.png)
+![Dashboard down](screenshots/20-monitoring-down-dashboard.PNG)
+![Telegram down](screenshots/21-monitoring-down-telegram.PNG)
 
 **Application restarted (`docker start react-app`): recovery**
 
-![Dashboard up](screenshots/22-monitoring-up-dashboard.png)
-![Telegram up](screenshots/23-monitoring-up-telegram.png)
+![Dashboard up](screenshots/22-monitoring-up-dashboard.PNG)
+![Telegram up](screenshots/23-monitoring-up-telegram.PNG)
 
 ## Notes
 
